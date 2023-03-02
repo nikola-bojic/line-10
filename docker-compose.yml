@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  
+  l10:
+    container_name: l10
+    image: l10
+    build:
+      context: .
+      dockerfile: dev.Dockerfile
+    ports:
+      - 5174:5174
